@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   fbTtitle: {
-    fontSize: 36,
+    fontSize: 30,
     fontWeight:'600',
     color:'#fff'
     
@@ -38,8 +38,8 @@ const styles = StyleSheet.create({
     alignSelf:'center',
     backgroundColor:'#3A3B3B',
     justifyContent:'center',
-    height:40,
-    width:40,
+    height:36,
+    width:36,
     borderRadius:20,
     marginLeft:10
 
