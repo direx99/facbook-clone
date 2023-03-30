@@ -15,7 +15,6 @@ export default function Postbar() {
       <Image style={styles.galleryIcon} source={galleryIcon}/>
 
         </View>
-        <View style={styles.blackbar}/>
     </View>
   )
 }
