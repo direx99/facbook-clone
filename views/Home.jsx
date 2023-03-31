@@ -4,6 +4,7 @@ import TitleBar from '../components/TitleBar'
 import Postbar from '../components/Postbar'
 import Stories from '../components/Stories'
 import Blackbar from '../components/Blackbar'
+import Post from '../components/Post'
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
      <Blackbar/>
      <Stories/>
      <Blackbar/>
+     <Post/>
+     
     </View>
   )
 }
