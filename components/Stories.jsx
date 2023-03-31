@@ -21,11 +21,11 @@ export default function Stories() {
         <Text style={styles.createstorytxt}>Story</Text>
       </View>
 
-      {users.map(user => (
+      {users.map(user => ( 
          <View style={styles.friendstory}>
          <Image style={styles.storyimage} source={story} />
+         <Image style={styles.smalldp} source={story} />
          <Text style={styles.friendname}>{user.name}</Text>
-         <Text style={styles.createstorytxt}>Story</Text>
        </View>
       ))}
 
@@ -42,6 +42,8 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     alignItems: "center",
 marginTop:15,
+marginBottom:15,
+
 marginLeft:10
   },
   storycontainer: {
@@ -76,7 +78,7 @@ marginLeft:10
     borderRadius: 20,
     alignItems: "center",
 marginTop:15,
-marginLeft:10
+marginLeft:7
   },
   storyimage: {
     width: "100%",
@@ -87,8 +89,18 @@ marginLeft:10
   },
   friendname: {
     color :'#fff',
-    fontSize:16,
+    fontSize:14,
+    marginTop:120,
+    fontWeight:700
+  },
+  smalldp:{
+    width:40,
+    height:40,
     marginTop:-180,
-    fontWeight:600
+    borderColor:'#1A74E2',
+    borderWidth:4,
+    borderRadius:30,
+   marginLeft:-50
+
   }
 });
