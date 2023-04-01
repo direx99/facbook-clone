@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "name": "Home",
+      "image": "home"
+    },
+    {
+      "id": 2,
+      "name": "Watch",
+      "image": "watch"
+    },
+    {
+      "id": 3,
+      "name": "Groups",
+      "image": "home"
+    }, {
+      "id": 4,
+      "name": "Home",
+      "image": "home"
+    },
+    {
+      "id": 5,
+      "name": "Watch",
+      "image": "watch"
+    },
+    {
+      "id": 6,
+      "name": "Groups",
+      "image": "home"
+    }
+  ]
+  

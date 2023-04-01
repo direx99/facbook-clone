@@ -1,18 +1,45 @@
 import { Image, StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import home from '../assets/homeactive.png'
+//import data from './data/iconsdata.json'
+
+
+const data = [
+  { name: "home", image: require("../assets/video.png") },
+  { name: "home", image: require("../assets/video.png") },
+  { name: "home", image: require("../assets/video.png") },
+  { name: "home", image: require("../assets/video.png") },
+  { name: "home", image: require("../assets/video.png") },
+  { name: "watch", image: require("../assets/homeactive.png") },
+  // add more icons here
+];
 
 const Navbar = () => {
+
+
+  const [icons, setIcons] = useState([]);
+  const [iconImage,setIconImage]=useState("") 
+  const hh = "watch"
+  useEffect(() => {
+    setIcons(data);
+  }, []);
+
+
   return (
     <View style={styles.navbar}>
-      <Image style={styles.icon} source={home}/>
-      <Image style={styles.icon} source={home}/>
-      <Image style={styles.icon} source={home}/>
-      <Image style={styles.icon} source={home}/>
-      <Image style={styles.icon} source={home}/>
-      <Image style={styles.icon} source={home}/>
 
+{icons.map(icon =>(
+ 
 
+      <View style={styles.iconclm}>
+        
+         
+        <Image style={styles.icon} source={icon.image}/>
+        <Text style={styles.icontitile} >{icon.name}</Text>
+      </View>
+      
+      ))}
+     
     </View>
   )
 }
@@ -28,8 +55,17 @@ const styles = StyleSheet.create({
         justifyContent:'space-between',
     },
     icon:{
-        marginBottom:40,
-        width:30,
-        height:30
+        width:28,
+        height:28
+    },
+    icontitile:{
+      color:'#fff',
+      fontSize:12,
+
+    },
+    iconclm:{
+      flexDirection:'column',
+      alignItems:'center',
     }
 })
+
